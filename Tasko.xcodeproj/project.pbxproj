@@ -21,6 +21,15 @@
 		B74EB09A28B7968D00C95C40 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74EB09928B7968D00C95C40 /* ProjectsViewController.swift */; };
 		B74EB09F28B7979300C95C40 /* GetStarted.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B74EB09E28B7979300C95C40 /* GetStarted.storyboard */; };
 		B74EB0A128B797A300C95C40 /* GetStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74EB0A028B797A300C95C40 /* GetStartedViewController.swift */; };
+		B74EB0AC28B79AD500C95C40 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B74EB0A328B79AD500C95C40 /* Inter-SemiBold.ttf */; };
+		B74EB0AD28B79AD500C95C40 /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B74EB0A428B79AD500C95C40 /* Inter-ExtraLight.ttf */; };
+		B74EB0AE28B79AD500C95C40 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B74EB0A528B79AD500C95C40 /* Inter-Bold.ttf */; };
+		B74EB0AF28B79AD500C95C40 /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B74EB0A628B79AD500C95C40 /* Inter-Thin.ttf */; };
+		B74EB0B028B79AD500C95C40 /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B74EB0A728B79AD500C95C40 /* Inter-Light.ttf */; };
+		B74EB0B128B79AD500C95C40 /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B74EB0A828B79AD500C95C40 /* Inter-ExtraBold.ttf */; };
+		B74EB0B228B79AD500C95C40 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B74EB0A928B79AD500C95C40 /* Inter-Medium.ttf */; };
+		B74EB0B328B79AD500C95C40 /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B74EB0AA28B79AD500C95C40 /* Inter-Black.ttf */; };
+		B74EB0B428B79AD500C95C40 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B74EB0AB28B79AD500C95C40 /* Inter-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +68,15 @@
 		B74EB09928B7968D00C95C40 /* ProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
 		B74EB09E28B7979300C95C40 /* GetStarted.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GetStarted.storyboard; sourceTree = "<group>"; };
 		B74EB0A028B797A300C95C40 /* GetStartedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedViewController.swift; sourceTree = "<group>"; };
+		B74EB0A328B79AD500C95C40 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		B74EB0A428B79AD500C95C40 /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		B74EB0A528B79AD500C95C40 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		B74EB0A628B79AD500C95C40 /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		B74EB0A728B79AD500C95C40 /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		B74EB0A828B79AD500C95C40 /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		B74EB0A928B79AD500C95C40 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		B74EB0AA28B79AD500C95C40 /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		B74EB0AB28B79AD500C95C40 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +154,7 @@
 		B73D646D28B7753D00D8B38A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B74EB0A228B79AC100C95C40 /* Fonts */,
 				B73D644628B7711900D8B38A /* Assets.xcassets */,
 				B73D644828B7711900D8B38A /* LaunchScreen.storyboard */,
 				B73D644B28B7711900D8B38A /* Info.plist */,
@@ -220,6 +239,22 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B74EB0A228B79AC100C95C40 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B74EB0AA28B79AD500C95C40 /* Inter-Black.ttf */,
+				B74EB0A528B79AD500C95C40 /* Inter-Bold.ttf */,
+				B74EB0A828B79AD500C95C40 /* Inter-ExtraBold.ttf */,
+				B74EB0A428B79AD500C95C40 /* Inter-ExtraLight.ttf */,
+				B74EB0A728B79AD500C95C40 /* Inter-Light.ttf */,
+				B74EB0A928B79AD500C95C40 /* Inter-Medium.ttf */,
+				B74EB0AB28B79AD500C95C40 /* Inter-Regular.ttf */,
+				B74EB0A328B79AD500C95C40 /* Inter-SemiBold.ttf */,
+				B74EB0A628B79AD500C95C40 /* Inter-Thin.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,8 +361,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B74EB0B028B79AD500C95C40 /* Inter-Light.ttf in Resources */,
+				B74EB0B128B79AD500C95C40 /* Inter-ExtraBold.ttf in Resources */,
+				B74EB0AC28B79AD500C95C40 /* Inter-SemiBold.ttf in Resources */,
 				B74EB09828B7967A00C95C40 /* Projects.storyboard in Resources */,
+				B74EB0AF28B79AD500C95C40 /* Inter-Thin.ttf in Resources */,
+				B74EB0AE28B79AD500C95C40 /* Inter-Bold.ttf in Resources */,
+				B74EB0B428B79AD500C95C40 /* Inter-Regular.ttf in Resources */,
+				B74EB0B328B79AD500C95C40 /* Inter-Black.ttf in Resources */,
 				B73D644A28B7711900D8B38A /* LaunchScreen.storyboard in Resources */,
+				B74EB0AD28B79AD500C95C40 /* Inter-ExtraLight.ttf in Resources */,
+				B74EB0B228B79AD500C95C40 /* Inter-Medium.ttf in Resources */,
 				B73D644728B7711900D8B38A /* Assets.xcassets in Resources */,
 				B73D644228B7711800D8B38A /* Main.storyboard in Resources */,
 				B74EB09F28B7979300C95C40 /* GetStarted.storyboard in Resources */,
