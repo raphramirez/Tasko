@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		B73D643B28B7711800D8B38A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73D643A28B7711800D8B38A /* AppDelegate.swift */; };
 		B73D643D28B7711800D8B38A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73D643C28B7711800D8B38A /* SceneDelegate.swift */; };
-		B73D643F28B7711800D8B38A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73D643E28B7711800D8B38A /* ViewController.swift */; };
 		B73D644228B7711800D8B38A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B73D644028B7711800D8B38A /* Main.storyboard */; };
 		B73D644528B7711800D8B38A /* Tasko.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B73D644328B7711800D8B38A /* Tasko.xcdatamodeld */; };
 		B73D644728B7711900D8B38A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B73D644628B7711900D8B38A /* Assets.xcassets */; };
@@ -17,6 +16,11 @@
 		B73D645528B7711900D8B38A /* TaskoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73D645428B7711900D8B38A /* TaskoTests.swift */; };
 		B73D645F28B7711900D8B38A /* TaskoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73D645E28B7711900D8B38A /* TaskoUITests.swift */; };
 		B73D646128B7711900D8B38A /* TaskoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73D646028B7711900D8B38A /* TaskoUITestsLaunchTests.swift */; };
+		B74EB09328B7960F00C95C40 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74EB09228B7960F00C95C40 /* MainTabController.swift */; };
+		B74EB09828B7967A00C95C40 /* Projects.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B74EB09728B7967A00C95C40 /* Projects.storyboard */; };
+		B74EB09A28B7968D00C95C40 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74EB09928B7968D00C95C40 /* ProjectsViewController.swift */; };
+		B74EB09F28B7979300C95C40 /* GetStarted.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B74EB09E28B7979300C95C40 /* GetStarted.storyboard */; };
+		B74EB0A128B797A300C95C40 /* GetStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74EB0A028B797A300C95C40 /* GetStartedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +44,6 @@
 		B73D643728B7711800D8B38A /* Tasko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tasko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B73D643A28B7711800D8B38A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B73D643C28B7711800D8B38A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B73D643E28B7711800D8B38A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B73D644128B7711800D8B38A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B73D644428B7711800D8B38A /* Tasko.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tasko.xcdatamodel; sourceTree = "<group>"; };
 		B73D644628B7711900D8B38A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +54,11 @@
 		B73D645A28B7711900D8B38A /* TaskoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B73D645E28B7711900D8B38A /* TaskoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskoUITests.swift; sourceTree = "<group>"; };
 		B73D646028B7711900D8B38A /* TaskoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B74EB09228B7960F00C95C40 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		B74EB09728B7967A00C95C40 /* Projects.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Projects.storyboard; sourceTree = "<group>"; };
+		B74EB09928B7968D00C95C40 /* ProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
+		B74EB09E28B7979300C95C40 /* GetStarted.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GetStarted.storyboard; sourceTree = "<group>"; };
+		B74EB0A028B797A300C95C40 /* GetStartedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,20 +154,72 @@
 		B73D646F28B7754A00D8B38A /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				B74EB09128B7906C00C95C40 /* Main */,
+				B74EB09528B7965F00C95C40 /* GetStarted */,
+				B74EB09428B7965500C95C40 /* Projects */,
+				B74EB09128B7906C00C95C40 /* TabBar */,
 				B73D643A28B7711800D8B38A /* AppDelegate.swift */,
 				B73D643C28B7711800D8B38A /* SceneDelegate.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
 		};
-		B74EB09128B7906C00C95C40 /* Main */ = {
+		B74EB09128B7906C00C95C40 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
 				B73D644028B7711800D8B38A /* Main.storyboard */,
-				B73D643E28B7711800D8B38A /* ViewController.swift */,
+				B74EB09228B7960F00C95C40 /* MainTabController.swift */,
 			);
-			path = Main;
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		B74EB09428B7965500C95C40 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				B74EB09D28B7978100C95C40 /* Model */,
+				B74EB09C28B7977B00C95C40 /* ViewModel */,
+				B74EB09628B7966700C95C40 /* View */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
+		B74EB09528B7965F00C95C40 /* GetStarted */ = {
+			isa = PBXGroup;
+			children = (
+				B74EB09B28B7977600C95C40 /* View */,
+			);
+			path = GetStarted;
+			sourceTree = "<group>";
+		};
+		B74EB09628B7966700C95C40 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B74EB09728B7967A00C95C40 /* Projects.storyboard */,
+				B74EB09928B7968D00C95C40 /* ProjectsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B74EB09B28B7977600C95C40 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B74EB09E28B7979300C95C40 /* GetStarted.storyboard */,
+				B74EB0A028B797A300C95C40 /* GetStartedViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B74EB09C28B7977B00C95C40 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B74EB09D28B7978100C95C40 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,9 +326,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B74EB09828B7967A00C95C40 /* Projects.storyboard in Resources */,
 				B73D644A28B7711900D8B38A /* LaunchScreen.storyboard in Resources */,
 				B73D644728B7711900D8B38A /* Assets.xcassets in Resources */,
 				B73D644228B7711800D8B38A /* Main.storyboard in Resources */,
+				B74EB09F28B7979300C95C40 /* GetStarted.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,8 +356,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B73D644528B7711800D8B38A /* Tasko.xcdatamodeld in Sources */,
-				B73D643F28B7711800D8B38A /* ViewController.swift in Sources */,
+				B74EB09A28B7968D00C95C40 /* ProjectsViewController.swift in Sources */,
 				B73D643B28B7711800D8B38A /* AppDelegate.swift in Sources */,
+				B74EB0A128B797A300C95C40 /* GetStartedViewController.swift in Sources */,
+				B74EB09328B7960F00C95C40 /* MainTabController.swift in Sources */,
 				B73D643D28B7711800D8B38A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,7 +542,7 @@
 				INFOPLIST_FILE = Tasko/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = GetStarted;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -505,7 +569,7 @@
 				INFOPLIST_FILE = Tasko/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = GetStarted;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
