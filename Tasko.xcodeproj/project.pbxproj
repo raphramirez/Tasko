@@ -101,14 +101,9 @@
 		B73D643928B7711800D8B38A /* Tasko */ = {
 			isa = PBXGroup;
 			children = (
-				B73D643A28B7711800D8B38A /* AppDelegate.swift */,
-				B73D643C28B7711800D8B38A /* SceneDelegate.swift */,
-				B73D643E28B7711800D8B38A /* ViewController.swift */,
-				B73D644028B7711800D8B38A /* Main.storyboard */,
-				B73D644628B7711900D8B38A /* Assets.xcassets */,
-				B73D644828B7711900D8B38A /* LaunchScreen.storyboard */,
-				B73D644B28B7711900D8B38A /* Info.plist */,
-				B73D644328B7711800D8B38A /* Tasko.xcdatamodeld */,
+				B73D646F28B7754A00D8B38A /* Application */,
+				B73D646E28B7754300D8B38A /* Utilities */,
+				B73D646D28B7753D00D8B38A /* Resources */,
 			);
 			path = Tasko;
 			sourceTree = "<group>";
@@ -128,6 +123,43 @@
 				B73D646028B7711900D8B38A /* TaskoUITestsLaunchTests.swift */,
 			);
 			path = TaskoUITests;
+			sourceTree = "<group>";
+		};
+		B73D646D28B7753D00D8B38A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B73D644628B7711900D8B38A /* Assets.xcassets */,
+				B73D644828B7711900D8B38A /* LaunchScreen.storyboard */,
+				B73D644B28B7711900D8B38A /* Info.plist */,
+				B73D644328B7711800D8B38A /* Tasko.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B73D646E28B7754300D8B38A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B73D646F28B7754A00D8B38A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B74EB09128B7906C00C95C40 /* Main */,
+				B73D643A28B7711800D8B38A /* AppDelegate.swift */,
+				B73D643C28B7711800D8B38A /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B74EB09128B7906C00C95C40 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B73D644028B7711800D8B38A /* Main.storyboard */,
+				B73D643E28B7711800D8B38A /* ViewController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,8 +473,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Tasko/Info.plist;
+				INFOPLIST_FILE = Tasko/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -457,7 +490,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -469,7 +502,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Tasko/Info.plist;
+				INFOPLIST_FILE = Tasko/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -484,7 +517,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
