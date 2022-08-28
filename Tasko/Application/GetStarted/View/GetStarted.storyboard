@@ -61,6 +61,9 @@
                                     <color key="baseForegroundColor" name="Color 1"/>
                                     <color key="baseBackgroundColor" name="Color 3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Y0J-Cm-KpA" kind="show" id="0po-S2-sel"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -81,6 +84,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="659" y="84"/>
+        </scene>
+        <!--LoginViewController-->
+        <scene sceneID="Cl2-3D-dpU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" referencedIdentifier="LoginViewController" id="Y0J-Cm-KpA" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="1tS-UY-upP"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CZn-nR-fqD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1259" y="84"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rU0-Hb-0I3">

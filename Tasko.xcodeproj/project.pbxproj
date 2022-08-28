@@ -30,6 +30,8 @@
 		B74EB0B228B79AD500C95C40 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B74EB0A928B79AD500C95C40 /* Inter-Medium.ttf */; };
 		B74EB0B328B79AD500C95C40 /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B74EB0AA28B79AD500C95C40 /* Inter-Black.ttf */; };
 		B74EB0B428B79AD500C95C40 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B74EB0AB28B79AD500C95C40 /* Inter-Regular.ttf */; };
+		B7C6BAE128BB10C300FD4F56 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7C6BAE028BB10C300FD4F56 /* Login.storyboard */; };
+		B7C6BAE328BB10CF00FD4F56 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C6BAE228BB10CF00FD4F56 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		B74EB0A928B79AD500C95C40 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		B74EB0AA28B79AD500C95C40 /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
 		B74EB0AB28B79AD500C95C40 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		B7C6BAE028BB10C300FD4F56 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		B7C6BAE228BB10CF00FD4F56 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +177,7 @@
 		B73D646F28B7754A00D8B38A /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				B7C6BADC28BB109B00FD4F56 /* Login */,
 				B74EB09528B7965F00C95C40 /* GetStarted */,
 				B74EB09428B7965500C95C40 /* Projects */,
 				B74EB09128B7906C00C95C40 /* TabBar */,
@@ -255,6 +260,39 @@
 				B74EB0A628B79AD500C95C40 /* Inter-Thin.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B7C6BADC28BB109B00FD4F56 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B7C6BADF28BB10B500FD4F56 /* ViewModel */,
+				B7C6BADE28BB10AF00FD4F56 /* Model */,
+				B7C6BADD28BB10A200FD4F56 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B7C6BADD28BB10A200FD4F56 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B7C6BAE028BB10C300FD4F56 /* Login.storyboard */,
+				B7C6BAE228BB10CF00FD4F56 /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B7C6BADE28BB10AF00FD4F56 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B7C6BADF28BB10B500FD4F56 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,6 +407,7 @@
 				B74EB0AE28B79AD500C95C40 /* Inter-Bold.ttf in Resources */,
 				B74EB0B428B79AD500C95C40 /* Inter-Regular.ttf in Resources */,
 				B74EB0B328B79AD500C95C40 /* Inter-Black.ttf in Resources */,
+				B7C6BAE128BB10C300FD4F56 /* Login.storyboard in Resources */,
 				B73D644A28B7711900D8B38A /* LaunchScreen.storyboard in Resources */,
 				B74EB0AD28B79AD500C95C40 /* Inter-ExtraLight.ttf in Resources */,
 				B74EB0B228B79AD500C95C40 /* Inter-Medium.ttf in Resources */,
@@ -399,6 +438,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7C6BAE328BB10CF00FD4F56 /* LoginViewController.swift in Sources */,
 				B73D644528B7711800D8B38A /* Tasko.xcdatamodeld in Sources */,
 				B74EB09A28B7968D00C95C40 /* ProjectsViewController.swift in Sources */,
 				B73D643B28B7711800D8B38A /* AppDelegate.swift in Sources */,
