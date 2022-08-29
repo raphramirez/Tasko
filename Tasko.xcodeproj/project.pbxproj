@@ -30,6 +30,13 @@
 		B74EB0B228B79AD500C95C40 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B74EB0A928B79AD500C95C40 /* Inter-Medium.ttf */; };
 		B74EB0B328B79AD500C95C40 /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B74EB0AA28B79AD500C95C40 /* Inter-Black.ttf */; };
 		B74EB0B428B79AD500C95C40 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B74EB0AB28B79AD500C95C40 /* Inter-Regular.ttf */; };
+		B7961F2A28BB3AC60029E215 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7961F2928BB3AC60029E215 /* SignUp.storyboard */; };
+		B7961F2C28BB3ACF0029E215 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7961F2B28BB3ACF0029E215 /* SignUpViewController.swift */; };
+		B796F94928BC5D510013B6CA /* UIViewController+Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B796F94828BC5D510013B6CA /* UIViewController+Storyboard.swift */; };
+		B796F94B28BC5D780013B6CA /* Dictionary+URLQueryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B796F94A28BC5D780013B6CA /* Dictionary+URLQueryItem.swift */; };
+		B796F94D28BC5DBD0013B6CA /* AutoLayout+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B796F94C28BC5DBD0013B6CA /* AutoLayout+Extension.swift */; };
+		B796F94F28BC5DFA0013B6CA /* Locale+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B796F94E28BC5DFA0013B6CA /* Locale+Extension.swift */; };
+		B796F95128BC5E390013B6CA /* NSMutableAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B796F95028BC5E390013B6CA /* NSMutableAttributedString+Extension.swift */; };
 		B7C6BAE128BB10C300FD4F56 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7C6BAE028BB10C300FD4F56 /* Login.storyboard */; };
 		B7C6BAE328BB10CF00FD4F56 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C6BAE228BB10CF00FD4F56 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
@@ -79,6 +86,13 @@
 		B74EB0A928B79AD500C95C40 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		B74EB0AA28B79AD500C95C40 /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
 		B74EB0AB28B79AD500C95C40 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		B7961F2928BB3AC60029E215 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		B7961F2B28BB3ACF0029E215 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B796F94828BC5D510013B6CA /* UIViewController+Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Storyboard.swift"; sourceTree = "<group>"; };
+		B796F94A28BC5D780013B6CA /* Dictionary+URLQueryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+URLQueryItem.swift"; sourceTree = "<group>"; };
+		B796F94C28BC5DBD0013B6CA /* AutoLayout+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AutoLayout+Extension.swift"; sourceTree = "<group>"; };
+		B796F94E28BC5DFA0013B6CA /* Locale+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Locale+Extension.swift"; sourceTree = "<group>"; };
+		B796F95028BC5E390013B6CA /* NSMutableAttributedString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Extension.swift"; sourceTree = "<group>"; };
 		B7C6BAE028BB10C300FD4F56 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		B7C6BAE228BB10CF00FD4F56 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,6 +184,7 @@
 		B73D646E28B7754300D8B38A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				B796F94728BC5D300013B6CA /* Extensions */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -177,6 +192,7 @@
 		B73D646F28B7754A00D8B38A /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				B7961F2528BB3A9E0029E215 /* SignUp */,
 				B7C6BADC28BB109B00FD4F56 /* Login */,
 				B74EB09528B7965F00C95C40 /* GetStarted */,
 				B74EB09428B7965500C95C40 /* Projects */,
@@ -260,6 +276,51 @@
 				B74EB0A628B79AD500C95C40 /* Inter-Thin.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B7961F2528BB3A9E0029E215 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				B7961F2828BB3AB70029E215 /* Model */,
+				B7961F2728BB3AB10029E215 /* ViewModel */,
+				B7961F2628BB3AA90029E215 /* View */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		B7961F2628BB3AA90029E215 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B7961F2928BB3AC60029E215 /* SignUp.storyboard */,
+				B7961F2B28BB3ACF0029E215 /* SignUpViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B7961F2728BB3AB10029E215 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B7961F2828BB3AB70029E215 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B796F94728BC5D300013B6CA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B796F94828BC5D510013B6CA /* UIViewController+Storyboard.swift */,
+				B796F94A28BC5D780013B6CA /* Dictionary+URLQueryItem.swift */,
+				B796F94C28BC5DBD0013B6CA /* AutoLayout+Extension.swift */,
+				B796F94E28BC5DFA0013B6CA /* Locale+Extension.swift */,
+				B796F95028BC5E390013B6CA /* NSMutableAttributedString+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		B7C6BADC28BB109B00FD4F56 /* Login */ = {
@@ -413,6 +474,7 @@
 				B74EB0B228B79AD500C95C40 /* Inter-Medium.ttf in Resources */,
 				B73D644728B7711900D8B38A /* Assets.xcassets in Resources */,
 				B73D644228B7711800D8B38A /* Main.storyboard in Resources */,
+				B7961F2A28BB3AC60029E215 /* SignUp.storyboard in Resources */,
 				B74EB09F28B7979300C95C40 /* GetStarted.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,12 +501,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7C6BAE328BB10CF00FD4F56 /* LoginViewController.swift in Sources */,
+				B796F94F28BC5DFA0013B6CA /* Locale+Extension.swift in Sources */,
 				B73D644528B7711800D8B38A /* Tasko.xcdatamodeld in Sources */,
+				B796F95128BC5E390013B6CA /* NSMutableAttributedString+Extension.swift in Sources */,
+				B7961F2C28BB3ACF0029E215 /* SignUpViewController.swift in Sources */,
 				B74EB09A28B7968D00C95C40 /* ProjectsViewController.swift in Sources */,
 				B73D643B28B7711800D8B38A /* AppDelegate.swift in Sources */,
+				B796F94928BC5D510013B6CA /* UIViewController+Storyboard.swift in Sources */,
 				B74EB0A128B797A300C95C40 /* GetStartedViewController.swift in Sources */,
 				B74EB09328B7960F00C95C40 /* MainTabController.swift in Sources */,
 				B73D643D28B7711800D8B38A /* SceneDelegate.swift in Sources */,
+				B796F94D28BC5DBD0013B6CA /* AutoLayout+Extension.swift in Sources */,
+				B796F94B28BC5D780013B6CA /* Dictionary+URLQueryItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

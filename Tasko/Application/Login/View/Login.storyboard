@@ -32,19 +32,19 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHu-S8-crQ">
-                                <rect key="frame" x="37.666666666666657" y="292" width="300" height="39"/>
+                                <rect key="frame" x="32.666666666666657" y="292" width="310" height="39"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="bGC-UT-OO8"/>
+                                    <constraint firstAttribute="width" constant="310" id="bGC-UT-OO8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="32"/>
                                 <color key="textColor" name="Color 3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f0q-KB-Ux4" userLabel="Email View">
-                                <rect key="frame" x="37.666666666666657" y="355" width="300" height="52"/>
+                                <rect key="frame" x="32.666666666666657" y="355" width="310" height="52"/>
                                 <subviews>
                                     <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cUS-OE-zNQ" userLabel="Email Stack">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="52"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="52"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j2I-u2-0Qs" userLabel="Icon View">
                                                 <rect key="frame" x="0.0" y="0.0" width="52" height="52"/>
@@ -65,7 +65,7 @@
                                                 </constraints>
                                             </view>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email ID" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="XRw-Wj-7Xt" userLabel="Email">
-                                                <rect key="frame" x="52" y="0.0" width="248" height="52"/>
+                                                <rect key="frame" x="52" y="0.0" width="258" height="52"/>
                                                 <color key="tintColor" name="Color 4"/>
                                                 <color key="textColor" name="Color 4"/>
                                                 <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
@@ -88,10 +88,10 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8cM-Wu-AqY" userLabel="Password View">
-                                <rect key="frame" x="37.666666666666657" y="423" width="300" height="52"/>
+                                <rect key="frame" x="32.666666666666657" y="423" width="310" height="52"/>
                                 <subviews>
                                     <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ViC-ha-7u2" userLabel="Password Stack">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="52"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="52"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6nd-aX-EAW" userLabel="Icon View">
                                                 <rect key="frame" x="0.0" y="0.0" width="52" height="52"/>
@@ -112,7 +112,7 @@
                                                 </constraints>
                                             </view>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email ID" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="zsh-43-1tj" userLabel="Password">
-                                                <rect key="frame" x="52" y="0.0" width="248" height="52"/>
+                                                <rect key="frame" x="52" y="0.0" width="258" height="52"/>
                                                 <color key="tintColor" name="Color 4"/>
                                                 <color key="textColor" name="Color 4"/>
                                                 <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
@@ -135,7 +135,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xI-ym-5ny">
-                                <rect key="frame" x="194" y="483" width="143.66666666666663" height="35.666666666666629"/>
+                                <rect key="frame" x="199" y="483" width="143.66666666666663" height="35.666666666666629"/>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.10000000000000001" maxY="0.0"/>
                                 <state key="normal" title="Button"/>
@@ -146,7 +146,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFT-o6-AUt">
-                                <rect key="frame" x="37.666666666666657" y="534.66666666666663" width="300" height="48"/>
+                                <rect key="frame" x="32.666666666666657" y="534.66666666666663" width="310" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="lTe-c0-y5O"/>
                                 </constraints>
@@ -163,7 +163,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New to Tasko?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4z-pE-X3D">
                                         <rect key="frame" x="0.0" y="0.0" width="111.33333333333333" height="33.666666666666664"/>
                                         <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
-                                        <color key="textColor" name="Color 5"/>
+                                        <color key="textColor" name="Text"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKr-kf-O0C">
@@ -173,6 +173,9 @@
                                             <fontDescription key="titleFontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
                                             <color key="baseForegroundColor" name="Color 3"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="Tx6-V2-NHc" kind="show" id="LSK-Au-9Ib"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -208,6 +211,16 @@
             </objects>
             <point key="canvasLocation" x="39.200000000000003" y="96.059113300492612"/>
         </scene>
+        <!--SignUpViewController-->
+        <scene sceneID="OE3-Kd-XPK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignUp" referencedIdentifier="SignUpViewController" id="Tx6-V2-NHc" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="1sm-8S-e65"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="crZ-VN-8oJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="730" y="331"/>
+        </scene>
     </scenes>
     <resources>
         <image name="at" width="20" height="20"/>
@@ -225,8 +238,8 @@
         <namedColor name="Color 4">
             <color red="0.98000001907348633" green="0.98000001907348633" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="Color 5">
-            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="Text">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
