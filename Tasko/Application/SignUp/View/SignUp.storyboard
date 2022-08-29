@@ -247,6 +247,9 @@
                             <constraint firstItem="ouv-FE-fI0" firstAttribute="trailing" secondItem="On1-Mu-hyA" secondAttribute="trailing" id="yuH-d3-Ce4"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="zpE-4h-XIk">
+                        <barButtonItem key="backBarButtonItem" title="Basic Info" id="NRN-cw-Fel"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="textViewTerms" destination="tE1-J5-PN7" id="9DN-Sh-xgI"/>
                         <outlet property="txtEmail" destination="lM8-Wh-Oj7" id="nNW-Qc-L8C"/>

@@ -19,7 +19,7 @@
         <!--Get Started-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" userLabel="Get Started" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GetStartedViewController" id="Y6W-OH-hqX" userLabel="Get Started" customClass="GetStartedViewController" customModule="Tasko" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,7 +79,9 @@
                             <constraint firstItem="tNi-Cb-ZeF" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="uK1-id-j95"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="MCR-ch-DPU"/>
+                    <navigationItem key="navigationItem" id="MCR-ch-DPU">
+                        <barButtonItem key="backBarButtonItem" title=" " id="sLf-OV-W3t"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -103,6 +105,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tUR-b7-E5e">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
