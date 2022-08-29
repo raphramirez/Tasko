@@ -144,6 +144,9 @@
                                     <directionalEdgeInsets key="contentInsets" top="8" leading="8" bottom="8" trailing="0.0"/>
                                     <color key="baseForegroundColor" name="Color 3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="riQ-bv-QI3" kind="show" id="9CH-lx-zvQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFT-o6-AUt">
                                 <rect key="frame" x="32.666666666666657" y="534.66666666666663" width="310" height="48"/>
@@ -214,6 +217,16 @@
             </objects>
             <point key="canvasLocation" x="39.200000000000003" y="96.059113300492612"/>
         </scene>
+        <!--ForgotPasswordViewController-->
+        <scene sceneID="BPc-Ks-ECJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ForgotPassword" referencedIdentifier="ForgotPasswordViewController" id="riQ-bv-QI3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="WO0-y7-b9e"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iK7-mq-eUD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="817" y="13"/>
+        </scene>
         <!--SignUpViewController-->
         <scene sceneID="OE3-Kd-XPK">
             <objects>
@@ -222,7 +235,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="crZ-VN-8oJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="730" y="331"/>
+            <point key="canvasLocation" x="773" y="191"/>
         </scene>
     </scenes>
     <resources>

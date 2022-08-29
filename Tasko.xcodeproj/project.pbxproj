@@ -41,6 +41,8 @@
 		B796F95728BCBD310013B6CA /* SetPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B796F95628BCBD310013B6CA /* SetPassword.storyboard */; };
 		B796F95B28BCD9610013B6CA /* VerifyAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B796F95A28BCD9610013B6CA /* VerifyAccount.storyboard */; };
 		B796F95D28BCD9770013B6CA /* VerifyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B796F95C28BCD9770013B6CA /* VerifyAccountViewController.swift */; };
+		B796F96128BCDE840013B6CA /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B796F96028BCDE840013B6CA /* ForgotPassword.storyboard */; };
+		B796F96328BCDE950013B6CA /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B796F96228BCDE950013B6CA /* ForgotPasswordViewController.swift */; };
 		B7C6BAE128BB10C300FD4F56 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7C6BAE028BB10C300FD4F56 /* Login.storyboard */; };
 		B7C6BAE328BB10CF00FD4F56 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C6BAE228BB10CF00FD4F56 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
@@ -101,6 +103,8 @@
 		B796F95628BCBD310013B6CA /* SetPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SetPassword.storyboard; sourceTree = "<group>"; };
 		B796F95A28BCD9610013B6CA /* VerifyAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VerifyAccount.storyboard; sourceTree = "<group>"; };
 		B796F95C28BCD9770013B6CA /* VerifyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyAccountViewController.swift; sourceTree = "<group>"; };
+		B796F96028BCDE840013B6CA /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
+		B796F96228BCDE950013B6CA /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		B7C6BAE028BB10C300FD4F56 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		B7C6BAE228BB10CF00FD4F56 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -200,6 +204,7 @@
 		B73D646F28B7754A00D8B38A /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				B796F95E28BCDE6F0013B6CA /* ForgotPassword */,
 				B796F95828BCD9460013B6CA /* VerifyAccount */,
 				B7961F2528BB3A9E0029E215 /* SignUp */,
 				B7C6BADC28BB109B00FD4F56 /* Login */,
@@ -347,6 +352,23 @@
 			children = (
 				B796F95A28BCD9610013B6CA /* VerifyAccount.storyboard */,
 				B796F95C28BCD9770013B6CA /* VerifyAccountViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B796F95E28BCDE6F0013B6CA /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				B796F95F28BCDE790013B6CA /* View */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		B796F95F28BCDE790013B6CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B796F96028BCDE840013B6CA /* ForgotPassword.storyboard */,
+				B796F96228BCDE950013B6CA /* ForgotPasswordViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -504,6 +526,7 @@
 				B74EB0B228B79AD500C95C40 /* Inter-Medium.ttf in Resources */,
 				B73D644728B7711900D8B38A /* Assets.xcassets in Resources */,
 				B73D644228B7711800D8B38A /* Main.storyboard in Resources */,
+				B796F96128BCDE840013B6CA /* ForgotPassword.storyboard in Resources */,
 				B7961F2A28BB3AC60029E215 /* SignUp.storyboard in Resources */,
 				B74EB09F28B7979300C95C40 /* GetStarted.storyboard in Resources */,
 			);
@@ -530,6 +553,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B796F96328BCDE950013B6CA /* ForgotPasswordViewController.swift in Sources */,
 				B7C6BAE328BB10CF00FD4F56 /* LoginViewController.swift in Sources */,
 				B796F94F28BC5DFA0013B6CA /* Locale+Extension.swift in Sources */,
 				B73D644528B7711800D8B38A /* Tasko.xcdatamodeld in Sources */,
