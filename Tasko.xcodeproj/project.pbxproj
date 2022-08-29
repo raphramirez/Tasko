@@ -39,6 +39,8 @@
 		B796F95128BC5E390013B6CA /* NSMutableAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B796F95028BC5E390013B6CA /* NSMutableAttributedString+Extension.swift */; };
 		B796F95528BCB9890013B6CA /* SetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B796F95428BCB9890013B6CA /* SetPasswordViewController.swift */; };
 		B796F95728BCBD310013B6CA /* SetPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B796F95628BCBD310013B6CA /* SetPassword.storyboard */; };
+		B796F95B28BCD9610013B6CA /* VerifyAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B796F95A28BCD9610013B6CA /* VerifyAccount.storyboard */; };
+		B796F95D28BCD9770013B6CA /* VerifyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B796F95C28BCD9770013B6CA /* VerifyAccountViewController.swift */; };
 		B7C6BAE128BB10C300FD4F56 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7C6BAE028BB10C300FD4F56 /* Login.storyboard */; };
 		B7C6BAE328BB10CF00FD4F56 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C6BAE228BB10CF00FD4F56 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
@@ -97,6 +99,8 @@
 		B796F95028BC5E390013B6CA /* NSMutableAttributedString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Extension.swift"; sourceTree = "<group>"; };
 		B796F95428BCB9890013B6CA /* SetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPasswordViewController.swift; sourceTree = "<group>"; };
 		B796F95628BCBD310013B6CA /* SetPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SetPassword.storyboard; sourceTree = "<group>"; };
+		B796F95A28BCD9610013B6CA /* VerifyAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VerifyAccount.storyboard; sourceTree = "<group>"; };
+		B796F95C28BCD9770013B6CA /* VerifyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyAccountViewController.swift; sourceTree = "<group>"; };
 		B7C6BAE028BB10C300FD4F56 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		B7C6BAE228BB10CF00FD4F56 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -196,6 +200,7 @@
 		B73D646F28B7754A00D8B38A /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				B796F95828BCD9460013B6CA /* VerifyAccount */,
 				B7961F2528BB3A9E0029E215 /* SignUp */,
 				B7C6BADC28BB109B00FD4F56 /* Login */,
 				B74EB09528B7965F00C95C40 /* GetStarted */,
@@ -327,6 +332,23 @@
 				B796F95028BC5E390013B6CA /* NSMutableAttributedString+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B796F95828BCD9460013B6CA /* VerifyAccount */ = {
+			isa = PBXGroup;
+			children = (
+				B796F95928BCD9570013B6CA /* View */,
+			);
+			path = VerifyAccount;
+			sourceTree = "<group>";
+		};
+		B796F95928BCD9570013B6CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B796F95A28BCD9610013B6CA /* VerifyAccount.storyboard */,
+				B796F95C28BCD9770013B6CA /* VerifyAccountViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		B7C6BADC28BB109B00FD4F56 /* Login */ = {
@@ -473,6 +495,7 @@
 				B74EB09828B7967A00C95C40 /* Projects.storyboard in Resources */,
 				B74EB0AF28B79AD500C95C40 /* Inter-Thin.ttf in Resources */,
 				B74EB0AE28B79AD500C95C40 /* Inter-Bold.ttf in Resources */,
+				B796F95B28BCD9610013B6CA /* VerifyAccount.storyboard in Resources */,
 				B74EB0B428B79AD500C95C40 /* Inter-Regular.ttf in Resources */,
 				B74EB0B328B79AD500C95C40 /* Inter-Black.ttf in Resources */,
 				B7C6BAE128BB10C300FD4F56 /* Login.storyboard in Resources */,
@@ -512,6 +535,7 @@
 				B73D644528B7711800D8B38A /* Tasko.xcdatamodeld in Sources */,
 				B796F95128BC5E390013B6CA /* NSMutableAttributedString+Extension.swift in Sources */,
 				B7961F2C28BB3ACF0029E215 /* SignUpViewController.swift in Sources */,
+				B796F95D28BCD9770013B6CA /* VerifyAccountViewController.swift in Sources */,
 				B74EB09A28B7968D00C95C40 /* ProjectsViewController.swift in Sources */,
 				B796F95528BCB9890013B6CA /* SetPasswordViewController.swift in Sources */,
 				B73D643B28B7711800D8B38A /* AppDelegate.swift in Sources */,

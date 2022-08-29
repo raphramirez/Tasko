@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Regular.ttf">
+            <string>Inter-Regular</string>
+        </array>
+        <array key="Inter-SemiBold.ttf">
+            <string>Inter-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Verify Account View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="VerifyAccountViewController" id="Y6W-OH-hqX" customClass="VerifyAccountViewController" customModule="Tasko" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="undraw_forgot_password" translatesAutoresizingMaskIntoConstraints="NO" id="21R-Ei-JNg">
+                                <rect key="frame" x="45" y="68" width="324" height="215"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="215" id="4bQ-l0-bpB"/>
+                                    <constraint firstAttribute="width" constant="324" id="Wy5-zf-Vmu"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter OTP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q88-YV-idn">
+                                <rect key="frame" x="45" y="331" width="324" height="39"/>
+                                <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="32"/>
+                                <color key="textColor" name="Color 3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A 4-digit code has been sent to +639938876721" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1C-4g-LWz">
+                                <rect key="frame" x="45" y="386" width="324" height="39"/>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
+                                <color key="textColor" name="Text"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ky4-nc-fLE">
+                                <rect key="frame" x="45" y="457" width="324" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="gPx-cs-xoB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="32"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="one-time-code"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OF3-KH-Yi0">
+                                <rect key="frame" x="45" y="553" width="324" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="aPh-8x-ZuD"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Verify Account">
+                                    <fontDescription key="titleFontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
+                                    <color key="baseForegroundColor" name="Color 1"/>
+                                    <color key="baseBackgroundColor" name="Color 3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resend code in 00:23" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ex6-hL-FYD">
+                                <rect key="frame" x="124.5" y="818.5" width="165.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
+                                <color key="textColor" name="Text"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="Color 1"/>
+                        <constraints>
+                            <constraint firstItem="D1C-4g-LWz" firstAttribute="trailing" secondItem="q88-YV-idn" secondAttribute="trailing" id="0SG-EH-fHV"/>
+                            <constraint firstItem="ky4-nc-fLE" firstAttribute="leading" secondItem="D1C-4g-LWz" secondAttribute="leading" id="2lG-9D-3Ch"/>
+                            <constraint firstItem="OF3-KH-Yi0" firstAttribute="top" secondItem="ky4-nc-fLE" secondAttribute="bottom" constant="32" id="6ol-Vj-TfQ"/>
+                            <constraint firstItem="D1C-4g-LWz" firstAttribute="leading" secondItem="q88-YV-idn" secondAttribute="leading" id="8O8-xo-47e"/>
+                            <constraint firstItem="21R-Ei-JNg" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="24" id="Bec-8k-P2M"/>
+                            <constraint firstItem="OF3-KH-Yi0" firstAttribute="trailing" secondItem="ky4-nc-fLE" secondAttribute="trailing" id="DZg-gh-iw8"/>
+                            <constraint firstItem="OF3-KH-Yi0" firstAttribute="leading" secondItem="ky4-nc-fLE" secondAttribute="leading" id="Dao-g0-bhY"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Ex6-hL-FYD" secondAttribute="bottom" constant="24" id="Dmw-MI-fb9"/>
+                            <constraint firstItem="ky4-nc-fLE" firstAttribute="top" secondItem="D1C-4g-LWz" secondAttribute="bottom" constant="32" id="E2C-gT-27B"/>
+                            <constraint firstItem="ky4-nc-fLE" firstAttribute="trailing" secondItem="D1C-4g-LWz" secondAttribute="trailing" id="G6k-OD-aqv"/>
+                            <constraint firstItem="q88-YV-idn" firstAttribute="leading" secondItem="21R-Ei-JNg" secondAttribute="leading" id="L6D-xD-Up6"/>
+                            <constraint firstItem="D1C-4g-LWz" firstAttribute="top" secondItem="q88-YV-idn" secondAttribute="bottom" constant="16" id="SYl-EZ-aVu"/>
+                            <constraint firstItem="Ex6-hL-FYD" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Xbd-rK-PjG"/>
+                            <constraint firstItem="q88-YV-idn" firstAttribute="trailing" secondItem="21R-Ei-JNg" secondAttribute="trailing" id="jIk-hu-Uxk"/>
+                            <constraint firstItem="21R-Ei-JNg" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="oXU-G7-5og"/>
+                            <constraint firstItem="q88-YV-idn" firstAttribute="top" secondItem="21R-Ei-JNg" secondAttribute="bottom" constant="48" id="zzR-Qg-XoG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="98"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="undraw_forgot_password" width="324" height="215"/>
+        <namedColor name="Color 1">
+            <color red="0.13300000131130219" green="0.15700000524520874" blue="0.19200000166893005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color 3">
+            <color red="1" green="0.82700002193450928" blue="0.41200000047683716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="0.69999998807907104" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
