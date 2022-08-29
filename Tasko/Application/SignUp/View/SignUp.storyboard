@@ -180,24 +180,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="By signing up you agree to our Terms &amp; Conditions and Privacy Policy" translatesAutoresizingMaskIntoConstraints="NO" id="tE1-J5-PN7">
-                                <rect key="frame" x="40" y="561" width="310" height="55"/>
-                                <color key="textColor" name="Text"/>
-                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPo-tc-NEw">
-                                <rect key="frame" x="40" y="640" width="310" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="jbr-9i-H1f"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Continue">
-                                    <fontDescription key="titleFontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
-                                    <color key="baseForegroundColor" name="Color 1"/>
-                                    <color key="baseBackgroundColor" name="Color 3"/>
-                                </buttonConfiguration>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pWy-2f-JiB" userLabel="Login Stack">
                                 <rect key="frame" x="61" y="760.33333333333337" width="268.33333333333331" height="33.666666666666629"/>
                                 <subviews>
@@ -220,38 +202,49 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPo-tc-NEw">
+                                <rect key="frame" x="40" y="561" width="310" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="jbr-9i-H1f"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Continue">
+                                    <fontDescription key="titleFontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
+                                    <color key="baseForegroundColor" name="Color 1"/>
+                                    <color key="baseBackgroundColor" name="Color 3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="osn-Sb-bvi" kind="show" id="bP0-RH-WcO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" name="Color 1"/>
                         <constraints>
                             <constraint firstItem="Po8-Fe-4Ig" firstAttribute="trailing" secondItem="ouv-FE-fI0" secondAttribute="trailing" id="5oN-0w-JuD"/>
-                            <constraint firstItem="gPo-tc-NEw" firstAttribute="leading" secondItem="tE1-J5-PN7" secondAttribute="leading" id="7HS-Pc-9ZW"/>
-                            <constraint firstItem="tE1-J5-PN7" firstAttribute="top" secondItem="Po8-Fe-4Ig" secondAttribute="bottom" constant="16" id="AgX-ON-gTs"/>
                             <constraint firstItem="pWy-2f-JiB" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="DdH-Vu-N6A"/>
                             <constraint firstItem="Po8-Fe-4Ig" firstAttribute="leading" secondItem="ouv-FE-fI0" secondAttribute="leading" id="Gem-60-C0c"/>
-                            <constraint firstItem="tE1-J5-PN7" firstAttribute="leading" secondItem="Po8-Fe-4Ig" secondAttribute="leading" id="IDk-w5-Y6p"/>
+                            <constraint firstItem="gPo-tc-NEw" firstAttribute="top" secondItem="Po8-Fe-4Ig" secondAttribute="bottom" constant="16" id="N6L-Gx-nfa"/>
                             <constraint firstItem="ouv-FE-fI0" firstAttribute="top" secondItem="On1-Mu-hyA" secondAttribute="bottom" constant="16" id="TCP-qV-wkP"/>
+                            <constraint firstItem="gPo-tc-NEw" firstAttribute="leading" secondItem="Po8-Fe-4Ig" secondAttribute="leading" id="TIm-hx-Gvs"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="pWy-2f-JiB" secondAttribute="bottom" constant="16" id="TRB-cg-kfj"/>
                             <constraint firstItem="On1-Mu-hyA" firstAttribute="trailing" secondItem="Jbg-Kx-XxK" secondAttribute="trailing" id="UAH-HD-tw2"/>
-                            <constraint firstItem="gPo-tc-NEw" firstAttribute="top" secondItem="tE1-J5-PN7" secondAttribute="bottom" constant="24" id="UmR-Vf-eB1"/>
                             <constraint firstItem="On1-Mu-hyA" firstAttribute="top" secondItem="Jbg-Kx-XxK" secondAttribute="bottom" constant="30" id="Ybf-mq-wIC"/>
                             <constraint firstItem="Jbg-Kx-XxK" firstAttribute="top" secondItem="qi7-C3-2n9" secondAttribute="bottom" constant="24" id="Zpy-Bk-IR5"/>
-                            <constraint firstItem="tE1-J5-PN7" firstAttribute="trailing" secondItem="Po8-Fe-4Ig" secondAttribute="trailing" id="a2g-DI-qXD"/>
                             <constraint firstItem="Po8-Fe-4Ig" firstAttribute="top" secondItem="ouv-FE-fI0" secondAttribute="bottom" constant="16" id="bKD-NB-dpZ"/>
                             <constraint firstItem="qi7-C3-2n9" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="bUM-yD-ph1"/>
                             <constraint firstItem="Jbg-Kx-XxK" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="cFt-Lz-ltr"/>
                             <constraint firstItem="ouv-FE-fI0" firstAttribute="leading" secondItem="On1-Mu-hyA" secondAttribute="leading" id="l5b-ie-xvR"/>
-                            <constraint firstItem="gPo-tc-NEw" firstAttribute="trailing" secondItem="tE1-J5-PN7" secondAttribute="trailing" id="sbb-MH-Igc"/>
                             <constraint firstItem="qi7-C3-2n9" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="t22-VI-euP"/>
                             <constraint firstItem="On1-Mu-hyA" firstAttribute="leading" secondItem="Jbg-Kx-XxK" secondAttribute="leading" id="w0U-6u-evI"/>
                             <constraint firstItem="ouv-FE-fI0" firstAttribute="trailing" secondItem="On1-Mu-hyA" secondAttribute="trailing" id="yuH-d3-Ce4"/>
+                            <constraint firstItem="gPo-tc-NEw" firstAttribute="trailing" secondItem="Po8-Fe-4Ig" secondAttribute="trailing" id="zuV-EL-zTV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zpE-4h-XIk">
                         <barButtonItem key="backBarButtonItem" title="Basic Info" id="NRN-cw-Fel"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="textViewTerms" destination="tE1-J5-PN7" id="9DN-Sh-xgI"/>
                         <outlet property="txtEmail" destination="lM8-Wh-Oj7" id="nNW-Qc-L8C"/>
                         <outlet property="txtFullname" destination="8xB-od-gTI" id="HfH-fy-Qgx"/>
                         <outlet property="txtMobile" destination="oC5-o9-7Wn" id="ewe-J5-VE0"/>
@@ -260,6 +253,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="40" y="96.682464454976298"/>
+        </scene>
+        <!--SetPasswordViewController-->
+        <scene sceneID="Z73-pw-NWr">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SetPassword" referencedIdentifier="SetPasswordViewController" id="osn-Sb-bvi" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="8i4-W8-te6"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qiS-5S-bZr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="91"/>
         </scene>
     </scenes>
     <resources>

@@ -33,19 +33,6 @@ class SignUpViewController: UIViewController {
             string: "Mobile",
             attributes: [NSAttributedString.Key.foregroundColor: UIColor(named: "Color 5")!]
         )
-        
-        let attrTerms = NSMutableAttributedString(string: "By signing up you agree to our Terms & Conditions and Privacy Policy")
-        let termsAndConditionsLinkWasSet = attrTerms.setAsLink(textToFind: "Terms & Conditions", linkURL: "https://www.google.com/")
-        let privacyPolicyLinkWasSet = attrTerms.setAsLink(textToFind: "Privacy Policy", linkURL: "https://www.google.com/")
-        let linksWasSet = termsAndConditionsLinkWasSet && privacyPolicyLinkWasSet
-        if linksWasSet {
-            textViewTerms.attributedText = attrTerms
-            textViewTerms.linkTextAttributes = [
-                .foregroundColor: UIColor(named: "Color 3")!,
-            ]
-        }
-        textViewTerms.font = UIFont(name: "Inter", size: 16)!
-        textViewTerms.textColor = UIColor(named: "Text")!
     }
 
     @IBAction func goToLogin(_ sender: UIButton) {

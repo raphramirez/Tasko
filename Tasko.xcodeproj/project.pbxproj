@@ -37,6 +37,8 @@
 		B796F94D28BC5DBD0013B6CA /* AutoLayout+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B796F94C28BC5DBD0013B6CA /* AutoLayout+Extension.swift */; };
 		B796F94F28BC5DFA0013B6CA /* Locale+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B796F94E28BC5DFA0013B6CA /* Locale+Extension.swift */; };
 		B796F95128BC5E390013B6CA /* NSMutableAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B796F95028BC5E390013B6CA /* NSMutableAttributedString+Extension.swift */; };
+		B796F95528BCB9890013B6CA /* SetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B796F95428BCB9890013B6CA /* SetPasswordViewController.swift */; };
+		B796F95728BCBD310013B6CA /* SetPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B796F95628BCBD310013B6CA /* SetPassword.storyboard */; };
 		B7C6BAE128BB10C300FD4F56 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7C6BAE028BB10C300FD4F56 /* Login.storyboard */; };
 		B7C6BAE328BB10CF00FD4F56 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C6BAE228BB10CF00FD4F56 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
@@ -93,6 +95,8 @@
 		B796F94C28BC5DBD0013B6CA /* AutoLayout+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AutoLayout+Extension.swift"; sourceTree = "<group>"; };
 		B796F94E28BC5DFA0013B6CA /* Locale+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Locale+Extension.swift"; sourceTree = "<group>"; };
 		B796F95028BC5E390013B6CA /* NSMutableAttributedString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Extension.swift"; sourceTree = "<group>"; };
+		B796F95428BCB9890013B6CA /* SetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPasswordViewController.swift; sourceTree = "<group>"; };
+		B796F95628BCBD310013B6CA /* SetPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SetPassword.storyboard; sourceTree = "<group>"; };
 		B7C6BAE028BB10C300FD4F56 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		B7C6BAE228BB10CF00FD4F56 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -293,6 +297,8 @@
 			children = (
 				B7961F2928BB3AC60029E215 /* SignUp.storyboard */,
 				B7961F2B28BB3ACF0029E215 /* SignUpViewController.swift */,
+				B796F95628BCBD310013B6CA /* SetPassword.storyboard */,
+				B796F95428BCB9890013B6CA /* SetPasswordViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -462,6 +468,7 @@
 			files = (
 				B74EB0B028B79AD500C95C40 /* Inter-Light.ttf in Resources */,
 				B74EB0B128B79AD500C95C40 /* Inter-ExtraBold.ttf in Resources */,
+				B796F95728BCBD310013B6CA /* SetPassword.storyboard in Resources */,
 				B74EB0AC28B79AD500C95C40 /* Inter-SemiBold.ttf in Resources */,
 				B74EB09828B7967A00C95C40 /* Projects.storyboard in Resources */,
 				B74EB0AF28B79AD500C95C40 /* Inter-Thin.ttf in Resources */,
@@ -506,6 +513,7 @@
 				B796F95128BC5E390013B6CA /* NSMutableAttributedString+Extension.swift in Sources */,
 				B7961F2C28BB3ACF0029E215 /* SignUpViewController.swift in Sources */,
 				B74EB09A28B7968D00C95C40 /* ProjectsViewController.swift in Sources */,
+				B796F95528BCB9890013B6CA /* SetPasswordViewController.swift in Sources */,
 				B73D643B28B7711800D8B38A /* AppDelegate.swift in Sources */,
 				B796F94928BC5D510013B6CA /* UIViewController+Storyboard.swift in Sources */,
 				B74EB0A128B797A300C95C40 /* GetStartedViewController.swift in Sources */,
