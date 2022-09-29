@@ -159,6 +159,9 @@
                                     <color key="baseForegroundColor" name="Color 1"/>
                                     <color key="baseBackgroundColor" name="Color 3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="onLogin:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="vbM-HM-AHs"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sSx-8m-4cy" userLabel="Register Stack View">
                                 <rect key="frame" x="84.666666666666686" y="738.33333333333337" width="206" height="33.666666666666629"/>
