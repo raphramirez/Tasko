@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Regular.ttf">
+            <string>Inter-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Create Project View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CreateProjectViewController" id="Y6W-OH-hqX" customClass="CreateProjectViewController" customModule="Tasko" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="undraw_scrum_board" translatesAutoresizingMaskIntoConstraints="NO" id="dXX-GA-4Dh">
+                                <rect key="frame" x="16" y="63" width="358" height="252"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="252" id="0qu-QX-tvf"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="“Alone we can do so little; together we can do so much”" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHz-lO-YWC" userLabel="Quote">
+                                <rect key="frame" x="70" y="331" width="250" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="n2k-gD-iVT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
+                                <color key="textColor" name="Text"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Helen Keller" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXJ-aF-bdQ" userLabel="Quote Citation">
+                                <rect key="frame" x="243.33333333333334" y="378" width="76.666666666666657" height="14.666666666666686"/>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="12"/>
+                                <color key="textColor" name="Text"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Project" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OdR-Cz-r67">
+                                <rect key="frame" x="16" y="434" width="358" height="29.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="24"/>
+                                <color key="textColor" name="Color 3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lqF-Xl-ujM" userLabel="Title View">
+                                <rect key="frame" x="16" y="487.33333333333326" width="358" height="52"/>
+                                <subviews>
+                                    <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YC5-BJ-y4z" userLabel="Title Stack">
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="52"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tea-75-dHB" userLabel="Icon View">
+                                                <rect key="frame" x="0.0" y="0.0" width="52" height="52"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="RqI-NV-qzv">
+                                                        <rect key="frame" x="16" y="19" width="20" height="15"/>
+                                                        <color key="tintColor" name="Color 5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="Z0r-n5-Z3v"/>
+                                                            <constraint firstAttribute="width" constant="20" id="gqb-BW-WUe"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="52" id="7Zv-uc-1MY"/>
+                                                    <constraint firstItem="RqI-NV-qzv" firstAttribute="centerY" secondItem="tea-75-dHB" secondAttribute="centerY" id="Kft-L7-NAm"/>
+                                                    <constraint firstAttribute="width" constant="52" id="hbZ-sQ-Xc2"/>
+                                                    <constraint firstItem="RqI-NV-qzv" firstAttribute="centerX" secondItem="tea-75-dHB" secondAttribute="centerX" id="xmr-Pz-YGd"/>
+                                                </constraints>
+                                            </view>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="What's the title of the project?" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="qeb-7p-bGA" userLabel="Project Title">
+                                                <rect key="frame" x="52" y="0.0" width="306" height="52"/>
+                                                <color key="tintColor" name="Color 4"/>
+                                                <color key="textColor" name="Color 4"/>
+                                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="Color 2"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="YC5-BJ-y4z" secondAttribute="bottom" id="8Cj-Bi-GHG"/>
+                                    <constraint firstAttribute="trailing" secondItem="YC5-BJ-y4z" secondAttribute="trailing" id="RFj-K5-Gut"/>
+                                    <constraint firstItem="YC5-BJ-y4z" firstAttribute="top" secondItem="lqF-Xl-ujM" secondAttribute="top" id="b03-zK-y10"/>
+                                    <constraint firstItem="YC5-BJ-y4z" firstAttribute="leading" secondItem="lqF-Xl-ujM" secondAttribute="leading" id="bts-bR-Kek"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJe-S8-hCv">
+                                <rect key="frame" x="16" y="563.33333333333337" width="358" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="y8V-NF-umM"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Submit &amp; Create">
+                                    <fontDescription key="titleFontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
+                                    <color key="baseForegroundColor" name="Color 1"/>
+                                    <color key="baseBackgroundColor" name="Color 3"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="Color 1"/>
+                        <constraints>
+                            <constraint firstItem="lqF-Xl-ujM" firstAttribute="leading" secondItem="OdR-Cz-r67" secondAttribute="leading" id="2b0-pd-9XG"/>
+                            <constraint firstItem="dXX-GA-4Dh" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="6cH-1H-eak"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dXX-GA-4Dh" secondAttribute="trailing" constant="16" id="9Km-Vt-Lut"/>
+                            <constraint firstItem="OdR-Cz-r67" firstAttribute="top" secondItem="ZHz-lO-YWC" secondAttribute="bottom" constant="64" id="LZN-NO-Qsx"/>
+                            <constraint firstItem="lqF-Xl-ujM" firstAttribute="trailing" secondItem="OdR-Cz-r67" secondAttribute="trailing" id="OT9-Qj-8em"/>
+                            <constraint firstItem="OdR-Cz-r67" firstAttribute="leading" secondItem="dXX-GA-4Dh" secondAttribute="leading" id="ReZ-Ng-I0i"/>
+                            <constraint firstItem="XJe-S8-hCv" firstAttribute="leading" secondItem="lqF-Xl-ujM" secondAttribute="leading" id="TvO-ig-JhT"/>
+                            <constraint firstItem="dXX-GA-4Dh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="U35-qa-8Ys"/>
+                            <constraint firstItem="XJe-S8-hCv" firstAttribute="top" secondItem="lqF-Xl-ujM" secondAttribute="bottom" constant="24" id="VhL-Zd-cex"/>
+                            <constraint firstItem="ZHz-lO-YWC" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Xf1-xR-job"/>
+                            <constraint firstItem="OdR-Cz-r67" firstAttribute="trailing" secondItem="dXX-GA-4Dh" secondAttribute="trailing" id="ZEl-70-8Om"/>
+                            <constraint firstItem="XJe-S8-hCv" firstAttribute="trailing" secondItem="lqF-Xl-ujM" secondAttribute="trailing" id="cXN-OT-kEF"/>
+                            <constraint firstItem="ZHz-lO-YWC" firstAttribute="top" secondItem="dXX-GA-4Dh" secondAttribute="bottom" constant="16" id="gma-DD-Q6Y"/>
+                            <constraint firstItem="tXJ-aF-bdQ" firstAttribute="trailing" secondItem="ZHz-lO-YWC" secondAttribute="trailing" id="iG3-VE-kBD"/>
+                            <constraint firstItem="lqF-Xl-ujM" firstAttribute="top" secondItem="OdR-Cz-r67" secondAttribute="bottom" constant="24" id="j5L-wf-sbw"/>
+                            <constraint firstItem="tXJ-aF-bdQ" firstAttribute="top" secondItem="ZHz-lO-YWC" secondAttribute="bottom" constant="8" id="uic-tQ-LXC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <navigationItem title="Create Project" id="h71-R6-mVx"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="undraw_scrum_board" width="821.67626953125" height="579.00958251953125"/>
+        <namedColor name="Color 1">
+            <color red="0.13300000131130219" green="0.15700000524520874" blue="0.19200000166893005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color 2">
+            <color red="0.22400000691413879" green="0.24300000071525574" blue="0.27500000596046448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color 3">
+            <color red="1" green="0.82700002193450928" blue="0.41200000047683716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color 4">
+            <color red="0.98000001907348633" green="0.98000001907348633" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color 5">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="0.69999998807907104" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

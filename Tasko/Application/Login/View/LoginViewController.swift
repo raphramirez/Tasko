@@ -35,7 +35,7 @@ class LoginViewController: UIViewController {
         guard let mainViewController = storyBoard.instantiateViewController(withIdentifier: "MainTabController") as? MainTabController else {
             return
         }
-        mainViewController.navigationItem.hidesBackButton = true
+        
         self.navigationController?.pushViewController(mainViewController, animated: true)
     }
     
