@@ -17,6 +17,13 @@ class RealmRepository<RepositoryObject>: Repository
     private let realm: Realm
     
     init() {
+        // When you open the realm, specify that the schema
+        // is now using a newer version.
+        let config = Realm.Configuration(
+            schemaVersion: 2)
+        // Use this configuration when opening realms
+        Realm.Configuration.defaultConfiguration = config
+        
         realm = try! Realm()
     }
     

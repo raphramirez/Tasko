@@ -16,6 +16,9 @@ extension User: Entity {
         realmUser.lastName = lastName
         realmUser.uuid = lastName
         
+        let storableProjects = projects.compactMap { $0.toStorable() }
+        realmUser.projects.append(objectsIn: storableProjects)
+        
         return realmUser
     }
     

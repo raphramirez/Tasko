@@ -9,14 +9,12 @@
 /* Begin PBXBuildFile section */
 		B73D643B28B7711800D8B38A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73D643A28B7711800D8B38A /* AppDelegate.swift */; };
 		B73D643D28B7711800D8B38A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73D643C28B7711800D8B38A /* SceneDelegate.swift */; };
-		B73D644228B7711800D8B38A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B73D644028B7711800D8B38A /* Main.storyboard */; };
 		B73D644528B7711800D8B38A /* Tasko.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B73D644328B7711800D8B38A /* Tasko.xcdatamodeld */; };
 		B73D644728B7711900D8B38A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B73D644628B7711900D8B38A /* Assets.xcassets */; };
 		B73D644A28B7711900D8B38A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B73D644828B7711900D8B38A /* LaunchScreen.storyboard */; };
 		B73D645528B7711900D8B38A /* TaskoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73D645428B7711900D8B38A /* TaskoTests.swift */; };
 		B73D645F28B7711900D8B38A /* TaskoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73D645E28B7711900D8B38A /* TaskoUITests.swift */; };
 		B73D646128B7711900D8B38A /* TaskoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73D646028B7711900D8B38A /* TaskoUITestsLaunchTests.swift */; };
-		B74EB09328B7960F00C95C40 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74EB09228B7960F00C95C40 /* MainTabController.swift */; };
 		B74EB09828B7967A00C95C40 /* Projects.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B74EB09728B7967A00C95C40 /* Projects.storyboard */; };
 		B74EB09A28B7968D00C95C40 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74EB09928B7968D00C95C40 /* ProjectsViewController.swift */; };
 		B74EB09F28B7979300C95C40 /* GetStarted.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B74EB09E28B7979300C95C40 /* GetStarted.storyboard */; };
@@ -91,7 +89,6 @@
 		B73D643728B7711800D8B38A /* Tasko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tasko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B73D643A28B7711800D8B38A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B73D643C28B7711800D8B38A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B73D644128B7711800D8B38A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B73D644428B7711800D8B38A /* Tasko.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tasko.xcdatamodel; sourceTree = "<group>"; };
 		B73D644628B7711900D8B38A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B73D644928B7711900D8B38A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,7 +98,6 @@
 		B73D645A28B7711900D8B38A /* TaskoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B73D645E28B7711900D8B38A /* TaskoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskoUITests.swift; sourceTree = "<group>"; };
 		B73D646028B7711900D8B38A /* TaskoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskoUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		B74EB09228B7960F00C95C40 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 		B74EB09728B7967A00C95C40 /* Projects.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Projects.storyboard; sourceTree = "<group>"; };
 		B74EB09928B7968D00C95C40 /* ProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
 		B74EB09E28B7979300C95C40 /* GetStarted.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GetStarted.storyboard; sourceTree = "<group>"; };
@@ -180,6 +176,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B71640AF2931A7EC00FFBC2B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B7935C2B290956DE0071490C /* Common */,
+				B77B24DD290E44B900BC66C7 /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		B73D642E28B7711800D8B38A = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +208,7 @@
 		B73D643928B7711800D8B38A /* Tasko */ = {
 			isa = PBXGroup;
 			children = (
+				B71640AF2931A7EC00FFBC2B /* Data */,
 				B73D646F28B7754A00D8B38A /* Application */,
 				B73D646E28B7754300D8B38A /* Utilities */,
 				B73D646D28B7753D00D8B38A /* Resources */,
@@ -242,8 +248,6 @@
 		B73D646E28B7754300D8B38A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				B77B24DD290E44B900BC66C7 /* Repository */,
-				B7935C2B290956DE0071490C /* Common */,
 				B796F94728BC5D300013B6CA /* Extensions */,
 			);
 			path = Utilities;
@@ -260,20 +264,10 @@
 				B7C6BADC28BB109B00FD4F56 /* Login */,
 				B74EB09528B7965F00C95C40 /* GetStarted */,
 				B74EB09428B7965500C95C40 /* Projects */,
-				B74EB09128B7906C00C95C40 /* TabBar */,
 				B73D643A28B7711800D8B38A /* AppDelegate.swift */,
 				B73D643C28B7711800D8B38A /* SceneDelegate.swift */,
 			);
 			path = Application;
-			sourceTree = "<group>";
-		};
-		B74EB09128B7906C00C95C40 /* TabBar */ = {
-			isa = PBXGroup;
-			children = (
-				B73D644028B7711800D8B38A /* Main.storyboard */,
-				B74EB09228B7960F00C95C40 /* MainTabController.swift */,
-			);
-			path = TabBar;
 			sourceTree = "<group>";
 		};
 		B74EB09428B7965500C95C40 /* Projects */ = {
@@ -688,7 +682,6 @@
 				B74EB0AD28B79AD500C95C40 /* Inter-ExtraLight.ttf in Resources */,
 				B74EB0B228B79AD500C95C40 /* Inter-Medium.ttf in Resources */,
 				B73D644728B7711900D8B38A /* Assets.xcassets in Resources */,
-				B73D644228B7711800D8B38A /* Main.storyboard in Resources */,
 				B796F96128BCDE840013B6CA /* ForgotPassword.storyboard in Resources */,
 				B7961F2A28BB3AC60029E215 /* SignUp.storyboard in Resources */,
 				B74EB09F28B7979300C95C40 /* GetStarted.storyboard in Resources */,
@@ -745,7 +738,6 @@
 				B77B24E3290E477A00BC66C7 /* Storable.swift in Sources */,
 				B77B24DF290E46CB00BC66C7 /* User.swift in Sources */,
 				B74EB0A128B797A300C95C40 /* GetStartedViewController.swift in Sources */,
-				B74EB09328B7960F00C95C40 /* MainTabController.swift in Sources */,
 				B77B24E5290E478000BC66C7 /* Entity.swift in Sources */,
 				B7CD76AA28E5C42000888DD1 /* ProjectTableViewCell.swift in Sources */,
 				B73D643D28B7711800D8B38A /* SceneDelegate.swift in Sources */,
@@ -788,14 +780,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B73D644028B7711800D8B38A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B73D644128B7711800D8B38A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B73D644828B7711900D8B38A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

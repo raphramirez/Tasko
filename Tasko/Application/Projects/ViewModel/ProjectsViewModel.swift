@@ -10,9 +10,10 @@ import Combine
 
 final class ProjectsViewModel {
     
-    @Published private var projectsList: [Project] = []
+    private let projectsRepository = ProjectsRepository()
     
-    var projects: Published<[Project]>.Publisher {
-        return $projectsList
+    @Published var projectsList: [Project] = []
+    
+    init() {
     }
 }

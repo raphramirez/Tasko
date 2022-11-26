@@ -8,13 +8,20 @@
 import UIKit
 
 class GetStartedViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = ""
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//
-//    }
-
+    @IBAction func onGetStartedClicked(_ sender: UIButton) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Login", bundle: nil)
+        guard let mainViewController = storyBoard.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController else {
+            return
+        }
+        
+        self.navigationController?.pushViewController(mainViewController, animated: true)
+    }
 }
+

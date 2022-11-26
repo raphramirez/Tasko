@@ -17,6 +17,19 @@ enum StorableProjectStatus: String, PersistableEnum {
 extension Project: Entity {
     private var storableProject: StorableProject {
         let realmProject = StorableProject()
+        realmProject.title = title
+        
+        switch status {
+        case .InProgress:
+            realmProject.status = .InProgress
+        case .OnHold:
+            realmProject.status = .OnHold
+        case .Completed:
+            realmProject.status = .Completed
+        }
+        
+        realmProject.dateCreated = dateCreated
+        realmProject.leadId = leadId
         
         return realmProject
     }
@@ -34,7 +47,8 @@ class StorableProject: Object, Storable {
     @Persisted var dateCreated: Date
     
     @Persisted var leadId: String
-    @Persisted var members = List<StorableProfile>()
+    
+    @Persisted(originProperty: "projects") var members: LinkingObjects<StorableUser>
     
     var model: Project {
         get {

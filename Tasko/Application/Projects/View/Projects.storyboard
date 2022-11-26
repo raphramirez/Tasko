@@ -63,7 +63,6 @@
                             <constraint firstItem="dVm-xH-Ybn" firstAttribute="top" secondItem="Drd-no-cS9" secondAttribute="bottom" constant="48" id="sja-Xx-Rs1"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Ow7-9t-qsL"/>
                     <connections>
                         <outlet property="tableViewProjects" destination="dVm-xH-Ybn" id="fUa-Gp-zPY"/>
                     </connections>

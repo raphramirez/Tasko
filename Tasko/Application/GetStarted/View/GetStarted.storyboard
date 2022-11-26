@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sVP-ka-6Bg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sVP-ka-6Bg">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -25,14 +26,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="undraw_engineering_team" translatesAutoresizingMaskIntoConstraints="NO" id="rWV-Kz-ECp">
-                                <rect key="frame" x="63" y="160" width="288" height="147"/>
+                                <rect key="frame" x="63" y="164" width="288" height="147"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="147" id="3Eu-rr-WjB"/>
                                     <constraint firstAttribute="width" constant="288" id="l2H-4H-tA6"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manage and prioritize your tasks easily. Test" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNi-Cb-ZeF">
-                                <rect key="frame" x="73" y="347" width="268" height="58.5"/>
+                                <rect key="frame" x="73" y="351" width="268" height="58.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="268" id="DyK-od-ZgJ"/>
                                 </constraints>
@@ -41,7 +42,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amet nisl purus in mollis nunc sed id semper. Phasellus faucibus scelerisque eleifend donec." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tS4-zv-sTm">
-                                <rect key="frame" x="42" y="437.5" width="330" height="58.5"/>
+                                <rect key="frame" x="42" y="441.5" width="330" height="58.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="330" id="aig-uM-djt"/>
                                 </constraints>
@@ -62,7 +63,7 @@
                                     <color key="baseBackgroundColor" name="Color 3"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Y0J-Cm-KpA" kind="show" id="0po-S2-sel"/>
+                                    <action selector="onGetStartedClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="RCi-Sj-Sg9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -79,23 +80,11 @@
                             <constraint firstItem="tNi-Cb-ZeF" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="uK1-id-j95"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="MCR-ch-DPU">
-                        <barButtonItem key="backBarButtonItem" title=" " id="sLf-OV-W3t"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="MCR-ch-DPU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="659" y="84"/>
-        </scene>
-        <!--LoginViewController-->
-        <scene sceneID="Cl2-3D-dpU">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Login" referencedIdentifier="LoginViewController" id="Y0J-Cm-KpA" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="1tS-UY-upP"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CZn-nR-fqD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1259" y="84"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rU0-Hb-0I3">
@@ -103,7 +92,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sVP-ka-6Bg" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tUR-b7-E5e">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                     </navigationBar>

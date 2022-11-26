@@ -132,7 +132,6 @@
                         </constraints>
                     </view>
                 </viewController>
-                <navigationItem title="Create Project" id="h71-R6-mVx"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="132" y="-34"/>

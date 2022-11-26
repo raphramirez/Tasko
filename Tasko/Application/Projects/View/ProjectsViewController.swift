@@ -18,7 +18,6 @@ class ProjectsViewController: UIViewController {
     @IBOutlet private weak var tableViewProjects: UITableView!
     
     let viewModel = ProjectsViewModel()
-    var projects = [Project]()
     
     var cancellables = Set<AnyCancellable>()
     
@@ -36,20 +35,23 @@ class ProjectsViewController: UIViewController {
         setupBinders()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.tintColor = UIColor(named: "Text")
+    }
+    
     private func setupBinders() {
-        viewModel.projects.sink { [weak self] projects in
-            self?.projects = projects
+        viewModel.$projectsList.sink { [weak self] projects in
             self?.tableViewProjects.reloadData()
         }.store(in: &cancellables)
     }
     
     @IBAction func onProjectAdd(_ sender: UIButton) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "CreateProject", bundle: nil)
-        guard let newVC = storyBoard.instantiateViewController(withIdentifier: "CreateProjectViewController") as? CreateProjectViewController else {
+        guard let createProjectVC = storyBoard.instantiateViewController(withIdentifier: "CreateProjectViewController") as? CreateProjectViewController else {
             return
         }
         
-        self.navigationController?.pushViewController(newVC, animated: true)
+        self.navigationController?.pushViewController(createProjectVC, animated: true)
     }
     
     private func setupNavigationBar() {
@@ -69,8 +71,6 @@ class ProjectsViewController: UIViewController {
             UIBarButtonItem(image: UIImage(named: "mdi_bell-outline"), style: .plain, target: self, action: nil),
             UIBarButtonItem(image: UIImage(named: "mdi_magnify"), style: .plain, target: self, action: nil),
         ]
-        
-        self.navigationController?.navigationBar.tintColor = UIColor(named: "Text")
     }
 }
 
@@ -79,14 +79,14 @@ extension ProjectsViewController: UITableViewDelegate, UITableViewDataSource {
     private func configureTableView() { }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return projects.count
+        return viewModel.projectsList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ProjectTableViewCell.identifier, for: indexPath) as! ProjectTableViewCell
         
-        let vm = ProjectCellViewModel(with: projects[indexPath.row])
-        cell.configure(with: vm)
+        let vm = ProjectCellViewModel(with: viewModel.projectsList[indexPath.row])
+//        cell.configure(with: vm)
         cell.selectionStyle = .none
         return cell
     }

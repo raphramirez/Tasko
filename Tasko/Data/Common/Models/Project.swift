@@ -19,6 +19,8 @@ struct Project {
     var status: ProjectStatus
     var leadId: String
     
+    var members: [User] = []
+    
     init(title: String, leadId: String) {
         self.title = title
         self.leadId = leadId

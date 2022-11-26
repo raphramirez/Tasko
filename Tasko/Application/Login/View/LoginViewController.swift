@@ -15,8 +15,6 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationController?.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Test", style: .plain, target: nil, action: nil)
-        
         txtEmail.attributedPlaceholder =
         NSAttributedString(
             string: "Email ID",
@@ -28,15 +26,38 @@ class LoginViewController: UIViewController {
             string: "Password",
             attributes: [NSAttributedString.Key.foregroundColor: UIColor(named: "Color 5")!]
         )
+        
+        self.title = ""
     }
     
     @IBAction func onLogin(_ sender: UIButton) {
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        guard let mainViewController = storyBoard.instantiateViewController(withIdentifier: "MainTabController") as? MainTabController else {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Projects", bundle: nil)
+        guard let mainVC = storyBoard.instantiateViewController(withIdentifier: "ProjectsViewController") as? ProjectsViewController else {
             return
         }
         
-        self.navigationController?.pushViewController(mainViewController, animated: true)
+        mainVC.navigationItem.hidesBackButton = true
+        
+        self.navigationController?.pushViewController(mainVC, animated: true)
     }
     
+    @IBAction func onRegister(_ sender: UIButton) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "SignUp", bundle: nil)
+        guard let signUpVC = storyBoard.instantiateViewController(withIdentifier: "SignUpViewController") as? SignUpViewController else {
+            return
+        }
+        
+        self.navigationController?.pushViewController(signUpVC, animated: true)
+    }
+    
+    
+    
+    @IBAction func onForgotPassword(_ sender: UIButton) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "ForgotPassword", bundle: nil)
+        guard let forgotPasswordVC = storyBoard.instantiateViewController(withIdentifier: "ForgotPasswordViewController") as? ForgotPasswordViewController else {
+            return
+        }
+        
+        self.navigationController?.pushViewController(forgotPasswordVC, animated: true)
+    }
 }

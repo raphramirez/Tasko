@@ -62,7 +62,7 @@ struct ProjectCellViewModel {
     init(with model: Project) {
         self.title = model.title
         self.dateCreated = model.dateCreated.format(to: "MM/dd/yyyy")
-        self.members = model.members
+        self.members = []
         
         let status = [
             ProjectStatus.InProgress: "In Progress",
