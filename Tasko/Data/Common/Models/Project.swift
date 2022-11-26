@@ -17,13 +17,11 @@ struct Project {
     var title: String
     var dateCreated: Date
     var status: ProjectStatus
+    var leadId: String
     
-    var lead: Profile
-    var members: [Profile] = []
-    
-    init(title: String, lead: Profile) {
+    init(title: String, leadId: String) {
         self.title = title
-        self.lead = lead
+        self.leadId = leadId
         
         self.dateCreated = Date()
         self.status = .InProgress

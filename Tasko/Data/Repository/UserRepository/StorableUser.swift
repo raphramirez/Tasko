@@ -31,13 +31,16 @@ class StorableUser: Object, Storable {
     @Persisted var lastName: String
     @Persisted var avatarColor: Int
     
+    @Persisted var projects: List<StorableProject>
+    
     var model: User {
         get {
             return User(
                 firstName: firstName,
                 middleName: middleName,
                 lastName: lastName,
-                avatarColor: UIColor(rgb: avatarColor))
+                avatarColor: UIColor(rgb: avatarColor),
+                projects: Array(_immutableCocoaArray: projects))
         }
     }
 }

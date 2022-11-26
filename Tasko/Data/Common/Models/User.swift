@@ -13,6 +13,8 @@ struct User {
     var lastName: String
     var avatarColor: UIColor
     
+    var projects: [Project]
+
     private var userProfile: Profile {
         let profile = Profile(firstName: firstName, middleName: middleName, lastName: lastName, avatarColor: avatarColor)
         

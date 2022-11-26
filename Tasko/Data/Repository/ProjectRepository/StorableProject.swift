@@ -33,12 +33,12 @@ class StorableProject: Object, Storable {
     @Persisted var status: StorableProjectStatus
     @Persisted var dateCreated: Date
     
-    @Persisted var lead: StorableProfile
+    @Persisted var leadId: String
     @Persisted var members = List<StorableProfile>()
     
     var model: Project {
         get {
-            return Project(title: title, lead: lead.model)
+            return Project(title: title, leadId: leadId)
         }
     }
 }
